@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input class="operation" type="text" placeholder="00" readonly />
+        </div>
+        <div class="allButtons">
+            <div class="buttons">
+                <div class="button" style="width:120px" onclick="popout()">&#8592;</div>
+                <div class="button" style="width:120px" onclick="Clear()">C</div>
+                <div class="button" onclick="pi()">π</div>
+                <div class="button" onclick="inv()">1/x</div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="sin()">sin</div>
+                <div class="button" onclick="cos()">cos</div>
+                <div class="button" onclick="tan()">tan</div>
+                <div class="button" onclick="ln()">ln</div>
+                <div class="button" onclick="logb10()">log</div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('7')">7</div>
+                <div class="button" onclick="display('8')">8</div>
+                <div class="button" onclick="display('9')">9</div>
+                <div class="button" onclick="mul_e()">e</div>
+                <div class="button" onclick="expo()">e <sup>x</sup></div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('4')">4</div>
+                <div class="button" onclick="display('5')">5</div>
+                <div class="button" onclick="display('6')">6</div>
+                <div class="button" onclick="sq()">x <sup>2</sup></div>
+                <div class="button" onclick="cube()">x <sup>3</sup></div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('1')">1</div>
+                <div class="button" onclick="display('2')">2</div>
+                <div class="button" onclick="display('3')">3</div>
+                <div class="button" onclick="sqrt()">√</div>
+                <div class="button" onclick="cbrt()">3√</div>
+            </div>
+            <div class="buttons">
+                <div class="button merge" onclick="calculate()">=</div>
+                <div class="button" onclick="display('0')">0</div>
+                <div class="button" onclick="display('.')">.</div>
+                <div class="button" onclick="facto()">x !</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/operations.js"></script>
+</body>
+
+</html>

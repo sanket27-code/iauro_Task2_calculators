@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input class="operation" type="text" placeholder="00" readonly />
+            <input class="result" type="text" placeholder="00" readonly />
+        </div>
+        <div class="allButtons">
+            <div class="buttons">
+                <div class="button" onclick="popout()">&#8592;</div>
+                <div class="button" onclick="Clear()">C</div>
+                <div class="button" onclick="display(' % ')">%</div>
+                <div class="button" onclick="display(' / ')">/</div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('7')">7</div>
+                <div class="button" onclick="display('8')">8</div>
+                <div class="button" onclick="display('9')">9</div>
+                <div class="button" onclick="display(' * ')">x</div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('4')">4</div>
+                <div class="button" onclick="display('5')">5</div>
+                <div class="button" onclick="display('6')">6</div>
+                <div class="button" onclick="display(' - ')">-</div>
+            </div>
+            <div class="buttons">
+                <div class="button" onclick="display('1')">1</div>
+                <div class="button" onclick="display('2')">2</div>
+                <div class="button" onclick="display('3')">3</div>
+                <div class="button" onclick="display(' + ')">+</div>
+            </div>
+            <div class="buttons">
+                <div class="button merge" onclick="calculate()">=</div>
+                <div class="button" onclick="display('0')">0</div>
+                <div class="button" onclick="display('.')">.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/operations.js"></script>
+</body>
+
+</html>
